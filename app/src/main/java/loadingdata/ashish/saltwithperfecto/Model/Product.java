@@ -48,7 +48,7 @@ private Integer discount;
 private List<String> pairedProduct = null;
 @SerializedName("Images")
 @Expose
-private List<String> images = null;
+private String images = null;
 @SerializedName("Details")
 @Expose
 private String details;
@@ -187,11 +187,11 @@ public void setPairedProduct(List<String> pairedProduct) {
 this.pairedProduct = pairedProduct;
 }
 
-public List<String> getImages() {
+public String getImages() {
 return images;
 }
 
-public void setImages(List<String> images) {
+public void setImages(String images) {
 this.images = images;
 }
 
