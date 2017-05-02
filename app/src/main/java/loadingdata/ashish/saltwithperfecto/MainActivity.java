@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             holder.tvProductName.setText(productList.get(position).getName());
-            holder.tvPrice.setText(productList.get(position).getPrice()+"");
+            holder.tvPrice.setText(getResources().getString(R.string.rupee)+""+productList.get(position).getPrice()+".00");
             Picasso
                     .with(getApplicationContext())
                     .load("http://43.252.91.22:100/"+productList.get(position).getCategoryId()+"/thumb.jpg")
